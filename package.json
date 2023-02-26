@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "migration": "npx sequelize-cli db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },

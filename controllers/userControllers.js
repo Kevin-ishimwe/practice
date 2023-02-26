@@ -1,9 +1,10 @@
 const { User } = require("../models");
+const { UserInfo } = require("../models");
 
 async function getAllUsers(req, res) {
   console.log(User);
   try {
-    const data = await User.findAll({
+    const data = await UserInfo.findAll({
       attributes: { exclude: ["password"] },
     });
     res.status(200).json(data);
